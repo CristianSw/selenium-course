@@ -9,11 +9,11 @@ public class CoreJavaBrushup {
 	public static void main(String[] args) {
 
 		// int, float, double, bool
-		int intNum = 5;
-		String someString = "Some String";
-		float floatVar = 2.34f;
-		char characther = 'c';
-		boolean isTrue = false;
+		// int intNum = 5;
+		// String someString = "Some String";
+		// float floatVar = 2.34f;
+		// char characther = 'c';
+		// boolean isTrue = false;
 
 		// Arrays - []
 
