@@ -10,23 +10,24 @@ import org.testng.Assert;
 
 public class FlightEndToEnd {
     public static void main(String[] args) throws InterruptedException {
-         FirefoxOptions options = new FirefoxOptions();
+        FirefoxOptions options = new FirefoxOptions();
         options.addArguments("-private");
 
         WebDriver driver = new FirefoxDriver(options);
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1")){
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
             Assert.assertTrue(true);
 
-        }else if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")){
+        } else if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) {
             Assert.assertFalse(false);
         }
 
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
         driver.findElement(By.xpath("//a[@value='MAA']")).click();
-        driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='GOI']")).click();
+        driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='GOI']"))
+                .click();
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
 
         driver.findElement(By.id("divpaxinfo")).click();
@@ -50,18 +51,9 @@ public class FlightEndToEnd {
         WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
         Select dropdown = new Select(staticDropdown);
         dropdown.selectByVisibleText("USD");
-        Assert.assertEquals(dropdown.getFirstSelectedOption().getText(),"USD");
+        Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "USD");
 
         driver.findElement(By.xpath("//input[@id='ctl00_mainContent_btn_FindFlights']")).click();
-
-
-
-        
-
-
-
-       
-
 
     }
 }

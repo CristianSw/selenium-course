@@ -1,4 +1,5 @@
 package locators;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,18 +58,18 @@ public class CoreJavaBrushup {
 			System.out.print(string + " ");
 		}
 		System.out.println();
-		System.out.println(list.contains("Daniela" ));
-		
-		String[] stringArr = {"Selenium", "Learning", "Fast"};
-		List<String> stringArrayListConverted =  Arrays.asList(stringArr);
+		System.out.println(list.contains("Daniela"));
+
+		String[] stringArr = { "Selenium", "Learning", "Fast" };
+		List<String> stringArrayListConverted = Arrays.asList(stringArr);
 		boolean isPresent = stringArrayListConverted.contains("Selenium");
 		System.out.println(isPresent);
-		
-		//String operations
-		
+
+		// String operations
+
 		String s = "Some String to be splitted";
 		String[] splittedArray = s.split(" ");
-		
+
 		for (String string : splittedArray) {
 			System.out.print(string + " ");
 		}

@@ -10,31 +10,28 @@ public class Alerts {
         WebDriver driver = new FirefoxDriver();
         String name = "Cristian";
 
-
-
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         driver.findElement(By.id("name")).sendKeys(name);
         driver.findElement(By.id("alertbtn")).click();
         Thread.sleep(2000);
-        Assert.assertEquals(driver.switchTo().alert().getText(), "Hello " + name + ", share this practice page and share your knowledge");
+        Assert.assertEquals(driver.switchTo().alert().getText(),
+                "Hello " + name + ", share this practice page and share your knowledge");
         System.out.println();
         driver.switchTo().alert().accept();
 
-        
         driver.findElement(By.id("name")).sendKeys(name);
         driver.findElement(By.id("confirmbtn")).click();
         Thread.sleep(2000);
-        Assert.assertEquals(driver.switchTo().alert().getText(),"Hello "+ name +", Are you sure you want to confirm?");
+        Assert.assertEquals(driver.switchTo().alert().getText(),
+                "Hello " + name + ", Are you sure you want to confirm?");
         driver.switchTo().alert().accept();
 
-        
         driver.findElement(By.id("name")).sendKeys(name);
         driver.findElement(By.id("confirmbtn")).click();
         Thread.sleep(2000);
-        Assert.assertEquals(driver.switchTo().alert().getText(),"Hello "+ name +", Are you sure you want to confirm?");
+        Assert.assertEquals(driver.switchTo().alert().getText(),
+                "Hello " + name + ", Are you sure you want to confirm?");
         driver.switchTo().alert().dismiss();
-
-
 
     }
 }

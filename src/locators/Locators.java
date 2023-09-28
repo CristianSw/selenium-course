@@ -1,4 +1,5 @@
 package locators;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -27,10 +28,10 @@ public class Locators {
 		// CSS Selector
 		String erorr = driver.findElement(By.cssSelector("p.error")).getText();
 		System.out.println(erorr);
-		
+
 		driver.findElement(By.linkText("Forgot your password?")).click();
-		//Xpath //tagname[@attribute='value']
-		
+		// Xpath //tagname[@attribute='value']
+
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -42,9 +43,9 @@ public class Locators {
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).clear();
 		driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("testmultiple@email.com");
 		driver.findElement(By.xpath("//form/input[3]")).sendKeys("5482185");
-//		driver.findElement(By.xpath("//div/button[1]")).click();
+		// driver.findElement(By.xpath("//div/button[1]")).click();
 		driver.findElement(By.cssSelector("button.reset-pwd-btn")).click();
-//		System.out.println(btnText);
+		// System.out.println(btnText);
 		System.out.println(driver.findElement(By.cssSelector("p.infoMsg")).getText());
 		driver.findElement(By.cssSelector(".go-to-login-btn")).click();
 		try {

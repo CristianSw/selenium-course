@@ -1,4 +1,5 @@
 package locators;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -16,8 +17,8 @@ public class LocatorsTwo {
 		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-//		driver.get("http://rahulshettyacademy.com/locatorspractice/");
-		
+		// driver.get("http://rahulshettyacademy.com/locatorspractice/");
+
 		String password = getPassword(driver);
 		driver.findElement(By.id("inputUsername")).sendKeys(username);
 		driver.findElement(By.name("inputPassword")).sendKeys(password);
