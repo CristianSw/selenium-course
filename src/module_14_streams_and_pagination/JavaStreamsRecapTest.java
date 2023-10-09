@@ -9,9 +9,9 @@ import java.util.stream.Stream;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class JavaStreamsRecap {
+public class JavaStreamsRecapTest {
 
-//	@Test
+	@Test
 	public void regular() {
 
 		ArrayList<String> names = new ArrayList<>();
@@ -31,7 +31,7 @@ public class JavaStreamsRecap {
 		System.out.println(wordCount);
 	}
 
-//	@Test
+	@Test
 	public void streamFilter() {
 
 		ArrayList<String> names = new ArrayList<>();
@@ -48,12 +48,12 @@ public class JavaStreamsRecap {
 
 		Long count = names.stream().filter(s -> s.startsWith("V")).count();
 		System.out.println(count);
-		names.stream().filter(s -> (s.length() <= 4)).forEach(s -> System.out.println(s));
-		names.stream().filter(s -> (s.length() <= 4)).limit(1).forEach(s -> System.out.println(s));
+		names.stream().filter(s -> (s.length() <= 4)).forEach(System.out::println);
+		names.stream().filter(s -> (s.length() <= 4)).limit(1).forEach(System.out::println);
 
 	}
 
-//	@Test
+	@Test
 	public void streamMap() {
 
 		ArrayList<String> names = new ArrayList<>();
@@ -68,11 +68,11 @@ public class JavaStreamsRecap {
 		names.add("Lacy");
 		names.add("Tuzea");
 
-		names.stream().filter(s -> s.endsWith("a")).map(s -> s.toUpperCase()).forEach(s -> System.out.println(s));
+		names.stream().filter(s -> s.endsWith("a")).map(String::toUpperCase).forEach(System.out::println);
 
 	}
 
-//	@Test
+	@Test
 	public void streamMapSorted() {
 
 		List<String> names = new ArrayList<>();
@@ -87,12 +87,12 @@ public class JavaStreamsRecap {
 		names.add("Lacy");
 		names.add("Tuzea");
 
-		names.stream().filter(s -> s.length() > 1).sorted().map(s -> s.toLowerCase())
-				.forEach(s -> System.out.println(s));
+		names.stream().filter(s -> s.length() > 1).sorted().map(String::toLowerCase)
+				.forEach(System.out::println);
 
 	}
 
-//	@Test
+	@Test
 	public void streamMergeLists() {
 		List<String> names1 = new ArrayList<>();
 		names1.add("Cristian");
@@ -123,7 +123,7 @@ public class JavaStreamsRecap {
 	
 
 	
-//	@Test
+	@Test
 	public void streamCollect() {
 		List<String> names1 = new ArrayList<>();
 		names1.add("Cristian");
@@ -147,7 +147,7 @@ public class JavaStreamsRecap {
 		
 		Stream<String> concatStream = Stream.concat(names1.stream(), names2.stream());
 		System.out.println("============================");
-		List<String> concatedList = concatStream.collect(Collectors.toList());
+		List<String> concatedList = concatStream.toList();
 		System.out.println(concatedList.get(0));
 		Assert.assertEquals(concatedList.get(0), "Cristian");
 	}
@@ -156,7 +156,7 @@ public class JavaStreamsRecap {
 	public void distinctSorting() {
 		List<Integer> values = Arrays.asList(1,2,2,2,3,3,5,6,8,7,4,5,4,5,85,1,6,2,2);
 		System.out.println("---------------------------------------------------------");
-		values.stream().distinct().sorted().forEach(s -> System.out.println(s));
+		values.stream().distinct().sorted().forEach(System.out::println);
 	}
 	
 

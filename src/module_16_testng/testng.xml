@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="tests" thread-count="10">
+    <parameter name="url" value="rahulshettyacademy.com"/>
+
+    <test name="Personal Tests">
+        <classes>
+            <class name="module_16_testng.DemoTest">
+                <methods>
+                    <exclude name="test2"/>
+                </methods>
+            </class>
+            <class name="module_16_testng.DemoTest2">
+                <methods>
+                    <include name="test4"/>
+                    <include name="test5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Demo Three">
+        <classes>
+            <class name="module_16_testng.DemoTest3">
+                <methods>
+                    <include name="Mobile.*"/>
+                    <include name="API.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

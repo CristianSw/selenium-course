@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-07T13:15:42 EEST" name="Default suite" finished-at="2023-10-07T13:15:42 EEST" duration-ms="27">
+    <groups>
+    </groups>
+    <test started-at="2023-10-07T13:15:42 EEST" name="Default test" finished-at="2023-10-07T13:15:42 EEST" duration-ms="27">
+      <class name="module_14_streams_and_pagination.JavaStreamsRecapTest">
+        <test-method signature="distinctSorting()[pri:0, instance:module_14_streams_and_pagination.JavaStreamsRecapTest@71238fc2]" started-at="2023-10-07T13:15:42 EEST" name="distinctSorting" finished-at="2023-10-07T13:15:42 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distinctSorting -->
+      </class> <!-- module_14_streams_and_pagination.JavaStreamsRecapTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="module_16_testng.Listeners"/>
+    </listeners>
+    <parameter name="url" value="rahulshettyacademy.com"/>
+    <test name="Personal Tests">
+        <packages>
+            <package name="module_16_testng"/>
+        </packages>
+    </test>
+</suite>
