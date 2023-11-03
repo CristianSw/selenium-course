@@ -20,6 +20,7 @@ public class AssignmentSix {
      */
     public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
         String checkboxLabel;
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         /* 1st step */

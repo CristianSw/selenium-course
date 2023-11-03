@@ -12,7 +12,7 @@ public class DemoTest3 {
     public void MobileTest2(){}
     @Test(groups = {"smoke"})
     public void MobileTest3(){}
-    @Test
+    @Test()
     public void MobileTest4(){}
     @Test
     public void MobileTest5(){}
