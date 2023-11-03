@@ -1,0 +1,44 @@
+10:13:51.381 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.14.1
+10:13:51.391 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+10:13:51.949 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\browserstack.yml
+10:13:51.949 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Administrator\selenium\selenium-course. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+10:13:51.950 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Administrator\selenium\selenium-course. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+10:14:45.362 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.14.1
+10:14:45.366 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+10:14:45.616 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\browserstack.yml
+10:14:45.616 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Administrator\selenium\selenium-course. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+10:14:45.617 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Administrator\selenium\selenium-course. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
+10:25:15.151 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.14.1
+10:25:15.154 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+10:25:15.345 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\Users\Administrator\selenium\selenium-course\browserstack.yml
+10:25:15.400 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:25:15.607 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+10:25:22.993 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+10:25:34.727 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+10:25:54.369 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/zxabhehayqp3qas3wiwgmlp1s8knwhgvmsmgfmkp to view build report, insights, and many more debugging information all at one place!
+
+10:25:55.149 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/df10dc9e8d450e35c236f6400ad4578882d11194
+10:25:55.150 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:25:56.913 [Thread-5] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
